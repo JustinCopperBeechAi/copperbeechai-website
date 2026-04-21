@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Copper Beech AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --copper: #B5341B;
+  --green-dark: #1A4008;
+  --cream: #FAF7F2;
+  --text: #1C1009;
+  --text-mid: #5A3E28;
+  --text-light: #9A806A;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+}
+
+.page {
+  max-width: 560px;
+  width: 100%;
+  text-align: center;
+  animation: up 0.8s ease both;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 2rem;
+  animation: float 6s ease-in-out infinite;
+}
+
+h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.25rem, 5vw, 3.25rem);
+  font-weight: 300;
+  line-height: 1.1;
+  color: var(--text);
+  margin-bottom: 1.25rem;
+}
+
+h1 em { font-style: italic; color: var(--copper); }
+
+.strapline {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.75;
+  color: var(--text-mid);
+  margin-bottom: 2.5rem;
+}
+
+.divider {
+  width: 40px;
+  height: 1px;
+  background: var(--copper);
+  margin: 0 auto 2.5rem;
+  opacity: 0.5;
+}
+
+.contact {
+  font-size: 0.875rem;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.04em;
+}
+
+a {
+  color: var(--copper);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1rem;
+  transition: opacity 0.2s;
+}
+
+a:hover { opacity: 0.7; }
+
+footer {
+  margin-top: 4rem;
+  font-size: 0.75rem;
+  color: var(--text-light);
+  opacity: 0.6;
+}
+
+@keyframes up {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-8px); }
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <img class="logo" src="1776732077734_image.png" alt="Copper Beech AI">
+  <h1>AI built for<br><em>the professions</em></h1>
+  <p class="strapline">We build intelligent tools that reduce the administrative burden on professionals. Based in Belfast, Northern Ireland.</p>
+  <div class="divider"></div>
+  <p class="contact">Get in touch</p>
+  <a href="mailto:hello@copperbeechai.com">hello@copperbeechai.com</a>
+</div>
+<footer>&copy; 2026 Copper Beech AI Ltd &nbsp;&middot;&nbsp; Belfast, Northern Ireland</footer>
+</body>
+</html>
